@@ -19,6 +19,7 @@ void print_key()
     puts("\r\n");
     if (strcmp(key_names[event.keycode], "W") == 0)
     {
+      puts("pressed W \r\n");
       if (y > 0)
       {
         y--;
@@ -26,6 +27,7 @@ void print_key()
     }
     else if (strcmp(key_names[event.keycode], "A") == 0)
     {
+      puts("pressed A \r\n");
       if (x > 0)
       {
         x--;
@@ -33,6 +35,7 @@ void print_key()
     }
     else if (strcmp(key_names[event.keycode], "S") == 0)
     {
+      puts("pressed S \r\n");
       if (y < 30)
       {
         y++;
@@ -40,6 +43,7 @@ void print_key()
     }
     else if (strcmp(key_names[event.keycode], "D") == 0)
     {
+      puts("pressed D \r\n");
       if (x < 40)
       {
         x++;
