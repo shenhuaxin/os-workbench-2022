@@ -6,6 +6,8 @@
 //   AM_KEYS(KEYNAME)
 // };
 
+static int x, y = 0;
+
 void print_key() {
   int SIDE = 16;
   AM_INPUT_KEYBRD_T event = { .keycode = AM_KEY_NONE };
@@ -14,6 +16,6 @@ void print_key() {
     // puts("Key pressed: ");
     // puts(key_names[event.keycode]);
     // puts("\n");
-    draw_tile(0*SIDE, 0*SIDE, SIDE, SIDE, 0x00ff99);
+    draw_tile(x*SIDE, y*SIDE, SIDE, SIDE, 0x00ff99);
   }
 }
