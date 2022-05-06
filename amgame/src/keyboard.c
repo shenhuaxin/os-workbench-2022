@@ -15,10 +15,7 @@ void print_key() {
   if (event.keycode != AM_KEY_NONE && event.keydown) {
     puts("Key pressed: ");
     puts(key_names[event.keycode]);
-    puts("\n");
-    puts("Key pressed: ");
-    puts(key_names[event.keycode]);
-    puts("\n");
+    puts("\r\n");
     // if (strcmp(key_names[event.keycode], "W") == 0)
     // {
     //   if (y > 0)
