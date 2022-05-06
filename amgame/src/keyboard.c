@@ -36,7 +36,7 @@ void print_key()
     else if (strcmp(key_names[event.keycode], "S") == 0)
     {
       puts("pressed S \r\n");
-      if (y < 30)
+      if (y < 29)
       {
         y++;
       }
@@ -44,7 +44,7 @@ void print_key()
     else if (strcmp(key_names[event.keycode], "D") == 0)
     {
       puts("pressed D \r\n");
-      if (x < 40)
+      if (x < 39)
       {
         x++;
       }
