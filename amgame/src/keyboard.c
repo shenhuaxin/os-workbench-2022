@@ -32,16 +32,16 @@ void print_key() {
     }
     if (strcmp(key_names[event.keycode], "S") == 0)
     {
-      if (y > 0)
+      if (y < 30)
       {
         y++;
       }
     }
     if (strcmp(key_names[event.keycode], "D") == 0)
     {
-      if (y > 0)
+      if (x < 40)
       {
-        y--;
+        x++;
       }
     }
     draw_tile(x*SIDE, y*SIDE, SIDE, SIDE, 0x00ff99);
