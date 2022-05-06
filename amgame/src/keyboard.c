@@ -16,6 +16,9 @@ void print_key() {
     puts("Key pressed: ");
     puts(key_names[event.keycode]);
     puts("\n");
+    puts("Key pressed: ");
+    puts(key_names[event.keycode]);
+    puts("\n");
     // if (strcmp(key_names[event.keycode], "W") == 0)
     // {
     //   if (y > 0)
