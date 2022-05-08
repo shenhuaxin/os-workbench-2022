@@ -15,9 +15,8 @@ void print_key()
     puts("Key pressed: ");
     puts(key_names[event.keycode]);
     puts("\r\n");
-    if (strcmp(key_names[event.keycode], "ESCAPE"))
+    if (strcmp(key_names[event.keycode], "ESCAPE") == 0)
     {
-      exit(1);
       panic("EXIT");
     }
   }
