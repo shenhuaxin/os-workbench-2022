@@ -21,14 +21,7 @@ int main(const char *args)
     wait_for_frame();
     splash();
     // 做完这一个时间片内需要完成的工作
-    int scanlines = 262;
-    while (scanlines-- > 0)
-    {
-      // 计算球的位置
-      draw_tile(0, 0, SIDE, SIDE, 0xFFA500);
-      // ppu_cycle();      // 更新游戏图像
-      // psg_detect_key(); // 读取按键，更新游戏逻辑
-    }
+    draw_tile(0, 0, SIDE, SIDE, 0xFFA500);
   }
   return 0;
 }
