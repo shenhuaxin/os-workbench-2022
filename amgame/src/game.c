@@ -27,7 +27,7 @@ int main(const char *args)
     draw_tile(x, x, SIDE, SIDE, 0xffffff);
     x = x + vx/FPS;
     y = y + vy/FPS;
-    draw_tile(x, x, SIDE, SIDE, 0xFFA500);
+    draw_tile(x, y, SIDE, SIDE, 0xFFA500);
   }
   return 0;
 }
