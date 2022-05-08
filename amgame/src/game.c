@@ -19,12 +19,11 @@ int main(const char *args)
   {
     // 在每一个时间片，例如每 16.7ms (60 fps)
     wait_for_frame();
-
+    splash();
     // 做完这一个时间片内需要完成的工作
     int scanlines = 262;
     while (scanlines-- > 0)
     {
-      splash();
       // 计算球的位置
       draw_tile(0, 0, SIDE, SIDE, 0xFFA500);
       // ppu_cycle();      // 更新游戏图像
