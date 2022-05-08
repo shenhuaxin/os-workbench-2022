@@ -17,7 +17,7 @@ int main(const char *args)
   puts("Press any key to see its key code...\n");
   int x = 0, y = 0;
   int vy = 60;
-  int vx = 0;
+  int vx = 10;
   while (1)
   {
     // 在每一个时间片，例如每 16.7ms (60 fps)
@@ -30,6 +30,12 @@ int main(const char *args)
     if (x > (w-16))
     {
       x = w - 16;
+      vx = -vx;
+    }
+    if (x < 0)
+    {
+      x = 0;
+      vx = -vx;
     }
     if (y > (h-16))
     {
