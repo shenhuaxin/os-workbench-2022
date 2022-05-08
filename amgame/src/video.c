@@ -1,7 +1,7 @@
 #include <game.h>
 
 #define SIDE 4
-static int w, h;
+
 
 static void init() {
   AM_GPU_CONFIG_T info = {0};

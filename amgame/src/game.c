@@ -27,6 +27,15 @@ int main(const char *args)
     draw_tile(x, x, SIDE, SIDE, 0xffffff);
     x = x + vx/FPS;
     y = y + vy/FPS;
+    if (x > (w-16))
+    {
+      x = w - 16;
+    }
+    if (y > (h-16))
+    {
+      y = h - 16;
+      vy = -vy;
+    }
     draw_tile(x, y, 16, 16, 0xFFA500);
   }
   return 0;
