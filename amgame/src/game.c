@@ -24,7 +24,7 @@ int main(const char *args)
     wait_for_frame();
     // splash();
     // 做完这一个时间片内需要完成的工作
-    draw_tile(x, y, SIDE, SIDE, 0xffffff);
+    draw_tile(x, y, 16, 16, 0xffffff);
     x = x + vx/FPS;
     y = y + vy/FPS;
     if (x > (w-16))
