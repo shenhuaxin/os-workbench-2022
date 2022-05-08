@@ -36,6 +36,12 @@ int main(const char *args)
       y = h - 16;
       vy = -vy;
     }
+    if (y < 0)
+    {
+      y = 0;
+      vy = -vy;
+    }
+    
     draw_tile(x, y, 16, 16, 0xFFA500);
   }
   return 0;
