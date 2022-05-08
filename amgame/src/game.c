@@ -1,7 +1,7 @@
 #include <game.h>
 #include <unistd.h>
 #define FPS          60
-#define SIDE 4
+#define SIDE 1
 
 // Operating system is a C program!
 int main(const char *args)
