@@ -17,6 +17,7 @@ void print_key()
     puts("\r\n");
     if (strcmp(key_names[event.keycode], "ESCAPE"))
     {
+      exit(1);
       panic("EXIT");
     }
   }
