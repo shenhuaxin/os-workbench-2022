@@ -1,4 +1,5 @@
 #include <game.h>
+#include <klib.h>
 
 #define KEYNAME(key) \
   [AM_KEY_##key] = #key,
@@ -14,6 +15,10 @@ void print_key()
     puts("Key pressed: ");
     puts(key_names[event.keycode]);
     puts("\r\n");
+    if (strcmp(key_names[event.keycode], "ESCAPE"))
+    {
+      panic("EXIT");
+    }
   }
 }
 
