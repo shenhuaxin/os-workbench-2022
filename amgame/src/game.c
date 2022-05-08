@@ -25,6 +25,7 @@ int main(const char *args)
     // splash();
     // 做完这一个时间片内需要完成的工作
     draw_tile(x, y, 16, 16, 0xffffff);
+    print_key();
     x = x + vx/FPS;
     y = y + vy/FPS;
     if (x > (w-16))
