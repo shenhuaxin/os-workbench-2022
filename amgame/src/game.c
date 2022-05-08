@@ -22,7 +22,7 @@ int main(const char *args)
   {
     // 在每一个时间片，例如每 16.7ms (60 fps)
     wait_for_frame();
-    splash();
+    // splash();
     // 做完这一个时间片内需要完成的工作
     draw_tile(x, x, SIDE, SIDE, 0xffffff);
     x = x + vx/FPS;
