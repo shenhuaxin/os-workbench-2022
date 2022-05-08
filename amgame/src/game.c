@@ -1,6 +1,7 @@
 #include <game.h>
 #include <unistd.h>
 #define FPS          60
+#define SIDE 16
 
 // Operating system is a C program!
 int main(const char *args)
@@ -23,6 +24,9 @@ int main(const char *args)
     int scanlines = 262;
     while (scanlines-- > 0)
     {
+      splash();
+      // 计算球的位置
+      draw_tile(0, 0, SIDE, SIDE, 0xFFA500);
       // ppu_cycle();      // 更新游戏图像
       // psg_detect_key(); // 读取按键，更新游戏逻辑
     }
